@@ -4,99 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Antoine ESSE</title>
-    <link rel="stylesheet" href="Style .css">
-    <!-- Lien vers une police de Google Fonts -->
+    <!-- Lien CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Ton propre fichier CSS -->
+    <link rel="stylesheet" href="Style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header avec navigation -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#home">Mon Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- Section d'accueil -->
-    <section id="home" class="hero">
+    <section id="home" class="hero text-center bg-light py-5">
         <div class="container">
-            <h1>Antoine Esse</h1>
-            <h2>Spécialiste en Production et Santé Animale</h2>
-            <p>Bienvenue sur mon portfolio ! Découvrez mon parcours, mes projets et mes compétences.</p>
-            <a href="#projects" class="btn">Voir mes projets</a>
+            <h1 class="display-4">Antoine Esse</h1>
+            <h2 class="text-primary">Spécialiste en Production et Santé Animale</h2>
+            <p class="lead">Bienvenue sur mon portfolio ! Découvrez mon parcours, mes projets et mes compétences.</p>
+            <a href="#projects" class="btn btn-primary btn-lg">Voir mes projets</a>
         </div>
     </section>
 
     <!-- Section À propos -->
-    <section id="about" class="about">
+    <section id="about" class="about py-5 bg-white">
         <div class="container">
-            <h2>À propos de moi</h2>
-            <div class="about-content">
-                <div class="about-text">
+            <h2 class="text-center mb-4">À propos de moi</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
                     <p>Je suis Antoine, diplômé en Production et Santé Animale avec un DEAT obtenu en 2021. Passionné par l'élevage durable et le bien-être animal, j’ai travaillé sur divers projets visant à optimiser la gestion des troupeaux et à réduire les maladies animales.</p>
-                    <p>Mon expertise inclut la gestion de la santé des animaux, l'élevage durable et l'optimisation des ressources agricoles. Mon objectif est de mettre en œuvre des solutions innovantes qui respectent l'environnement tout en améliorant la productivité.</p>
+                    <p>Mon expertise inclut la gestion de la santé des animaux, l'élevage durable et l'optimisation des ressources agricoles.</p>
                 </div>
-                <div class="about-image">
-                    <img src="images/photo.jpg" alt="Jean Dupont">
+                <div class="col-md-6">
+                    <img src="images/photo.jpg" alt="Antoine Esse" class="img-fluid rounded">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Section Projets -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects py-5 bg-light">
         <div class="container">
-            <h2>Mes projets</h2>
-            <div class="project">
-                <h3>Projet 1 : Gestion durable des troupeaux</h3>
-                <p>Un projet visant à améliorer la gestion des troupeaux à travers des techniques respectueuses de l'environnement.</p>
-                <a href="https://github.com/ton-utilisateur/gestion-troupeaux" target="_blank" class="btn">Voir le projet</a>
-            </div>
-            <div class="project">
-                <h3>Projet 2 : Réduction des maladies animales</h3>
-                <p>Développement de stratégies pour réduire les maladies animales dans des exploitations agricoles locales.</p>
-                <a href="https://github.com/ton-utilisateur/reduction-maladies" target="_blank" class="btn">Voir le projet</a>
-            </div>
-            <div class="project">
-                <h3>Projet 3 : Optimisation des ressources agricoles</h3>
-                <p>Création d'un programme pour optimiser l'utilisation des ressources agricoles tout en minimisant les impacts environnementaux.</p>
-                <a href="https://github.com/ton-utilisateur/optimisation-ressources" target="_blank" class="btn">Voir le projet</a>
+            <h2 class="text-center mb-4">Mes projets</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Gestion durable des troupeaux</h3>
+                            <p class="card-text">Améliorer la gestion des troupeaux à travers des techniques respectueuses de l'environnement.</p>
+                            <a href="#" class="btn btn-outline-primary">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Réduction des maladies animales</h3>
+                            <p class="card-text">Développement de stratégies pour réduire les maladies animales dans des exploitations locales.</p>
+                            <a href="#" class="btn btn-outline-primary">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Optimisation des ressources agricoles</h3>
+                            <p class="card-text">Optimiser l'utilisation des ressources agricoles tout en minimisant les impacts environnementaux.</p>
+                            <a href="#" class="btn btn-outline-primary">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Section Contact -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact py-5 bg-white">
         <div class="container">
-            <h2>Contactez-moi</h2>
-            <p>Si vous avez des questions ou si vous souhaitez discuter d'un projet, n'hésitez pas à me contacter !</p>
-            <form action="mailto:antoinegsmt@outlook.fr" method="POST" enctype="text/plain">
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message :</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit" class="btn">Envoyer</button>
+            <h2 class="text-center mb-4">Contactez-moi</h2>
+            <p class="text-center">Si vous avez des questions ou souhaitez discuter d'un projet, contactez-moi !</p>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </div>
             </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Jean Dupont | Tous droits réservés</p>
-            <p><a href="https://www.linkedin.com/in/jean-dupont" target="_blank">LinkedIn</a> | <a href="https://github.com/ton-utilisateur" target="_blank">GitHub</a></p>
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 Antoine Esse | Tous droits réservés</p>
         </div>
     </footer>
 
-    <script src="script .js"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
-</html>
+                            </html>
