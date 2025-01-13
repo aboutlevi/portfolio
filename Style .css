@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
+    line-height: 1.6;
 }
 
 /* Navigation Header */
@@ -106,47 +107,80 @@ nav ul li a:hover {
 
 /* Section Projets */
 .projects {
-    background-color: #ecf0f1;
-    padding: 60px 20px;
+    padding: 60px 0;
+    background-color: #ffffff;
 }
 
 .projects h2 {
-    font-size: 2.5em;
     text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.project-category h3 {
+    font-size: 1.8rem;
+    color: #007bff;
     margin-bottom: 30px;
-}
-
-.project {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.project h3 {
-    font-size: 2em;
-    margin-bottom: 10px;
+.project-card {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
 
-.project p {
-    font-size: 1.1em;
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #343a40;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
     margin-bottom: 15px;
 }
 
-.project .btn {
-    background-color: #2980b9;
-    color: white;
+.project-card .btn {
+    display: inline-block;
     padding: 10px 20px;
-    border: none;
-    font-size: 1.1em;
-    cursor: pointer;
+    font-size: 0.95rem;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
     text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-.project .btn:hover {
-    background-color: #34495e;
+.project-card .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-card {
+        margin-bottom: 20px;
+    }
+
+    .projects h2 {
+        font-size: 2rem;
+    }
+
+    .project-category h3 {
+        font-size: 1.5rem;
+    }
 }
 
 /* Section Contact */
@@ -210,4 +244,4 @@ footer a {
 
 footer a:hover {
     color: #34495e;
-}
+    }
