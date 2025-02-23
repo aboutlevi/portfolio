@@ -1,0 +1,20 @@
+/* Section Certificats */
+.certificats-page {
+    background: #f8f9fa;
+}
+
+.pdf-container {
+    margin-top: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 20px;
+}

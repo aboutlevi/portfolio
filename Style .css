@@ -1,0 +1,164 @@
+/* Style de base */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Header */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom, #2980b9, #1abc9c);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.hero h2 {
+    font-size: 1.8em;
+    margin-top: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.hero .btn {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    padding: 10px 25px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background-color: #34495e;
+    color: white;
+}
+
+.realizations {
+    padding: 60px 20px;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+.realizations h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.realizations p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.realizations .btn {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #2980b9;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.realizations .btn:hover {
+    background-color: #34495e;
+}
+/* Certifications */
+.certifications {
+    padding: 60px 20px;
+    background-color: #ecf0f1;
+}
+
+.certifications h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.certification-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.certification-item iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .projects h2 {
+        font-size: 2rem;
+    }
+
+    .certifications h2 {
+        font-size: 2rem;
+    }
+
+    .certification-item iframe {
+        height: 300px;
+    }
+}

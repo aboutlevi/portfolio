@@ -1,0 +1,25 @@
+/* Section Réalisations */
+.realizations-page {
+    background: #f8f9fa;
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Pour l'espacement entre les cartes sur petit écran */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px;
+    }
+}

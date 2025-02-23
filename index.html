@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Antoine ESSE</title>
+    <!-- Lien CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Ton propre fichier CSS -->
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header avec navigation -->
+    <header class="bg-dark text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#home">Mon Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section d'accueil -->
+    <section id="home" class="hero text-center bg-light py-5">
+        <div class="container">
+            <h1 class="display-4">Antoine Esse</h1>
+            <h2 class="text-primary">Spécialiste en Production et Santé Animale</h2>
+            <p class="lead">Bienvenue sur mon portfolio ! Découvrez mon parcours, mes projets et mes compétences.</p>
+            <a href="#diploma" class="btn btn-primary btn-lg">Voir le CV</a>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about" class="about py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-4">À propos de moi</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p>Je suis Antoine, diplômé en Production et Santé Animale avec un DEAT obtenu en 2021. Passionné par l'élevage durable et le bien-être animal, j’ai travaillé sur divers projets visant à optimiser la gestion des troupeaux et à réduire les maladies animales.</p>
+                    <p>Mon expertise inclut la gestion de la santé des animaux, l'élevage durable et l'optimisation des ressources agricoles.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/photo.jpg" alt="Antoine Esse" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Diplômes-->
+    <section id="diploma" class="diploma py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Diplômes</h2>
+        <ul class="list-group">
+            <li class="list-group-item"><i class="bi bi-mortarboard text-primary"></i> Baccalauréat Professionnel en Santé Animale et Agrostologie - Lycée Technique Agricole BSAA, Bénin (2021)</li>
+        </ul>
+    </div>
+</section>
+<!--  Section expérience professionnelle-->
+	
+<section id="experience" class="experience py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Expérience Professionnelle</h2>
+        <div class="accordion" id="experienceAccordion">
+            <!-- Expérience 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Technicien en Santé en Cuniculture - AFRIK'SLAPIN (2023 - En cours)
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#experienceAccordion">
+                    <div class="accordion-body">
+                        <ul class="list-group">
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> Soins et suivi sanitaire des lapins.</li>
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> Formation et encadrement d'éleveurs.</li>
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> Introduction de techniques innovantes ayant permis une augmentation de 30 % de la productivité.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Expérience 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Formation en Pilotage avec la Méthode EasyBos - CAEI (2024)
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#experienceAccordion">
+                    <div class="accordion-body">
+                        <ul class="list-group">
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> Renforcement des capacités des éleveurs.</li>
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> Conseil et mentorat sur les pratiques d'élevage.</li>
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> Développement d'un réseau professionnel pour l'amélioration de la productivité.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Expérience 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Auxiliaire Vétérinaire - Clinique Lécabel (2019 - 2022)
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#experienceAccordion">
+                    <div class="accordion-body">
+                        <ul class="list-group">
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> Assistance vétérinaire et gestion des soins courants.</li>
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> Identification et traitement des maladies animales.</li>
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> Gestion des dossiers médicaux des élevages.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Section Projets -->
+    <section id="projects" class="projects py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Mes Compétences</h2>
+            <section id="skills" class="skills py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Compétences</h2>
+        <div class="row">
+            <!-- Soft Skills -->
+            <div class="col-md-6 mb-4">
+                <h3 class="text-center">Soft Skills</h3>
+                <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> Esprit d'équipe</li>
+                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> Rigoureux</li>
+                    <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i> Organisé</li>
+                </ul>
+            </div>
+            <!-- Hard Skills -->
+            <div class="col-md-6 mb-4">
+                <h3 class="text-center">Hard Skills</h3>
+                <ul class="list-group">
+                    <li class="list-group-item"><i class="bi bi-tools text-primary"></i> Analyse des performances d'élevage</li>
+                    <li class="list-group-item"><i class="bi bi-tools text-primary"></i> Alimentation animale</li>
+                    <li class="list-group-item"><i class="bi bi-tools text-primary"></i> Technique de vaccination</li>
+                    <li class="list-group-item"><i class="bi bi-tools text-primary"></i> Logiciels de gestion de troupeaux (Livestocked)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section Réalisations -->
+<section id="realizations" class="realizations">
+    <div class="container">
+        <h2>Réalisations</h2>
+        <p>Découvrez toutes mes réalisations et projets détaillés sur une page dédiée.</p>
+        <a href="réalisations.html" class="btn">Voir mes réalisations</a>
+    </div>
+</section>
+<!-- Section Certifications-->
+<section id="certifications" class="Certifications">
+    <div class="container">
+        <h2>Certifications</h2>
+        <p>Découvrez tous mes certificats et diplômes.</p>
+        <a href="certification.html" class="btn">Voir mes Certificats</a>
+    </div>
+</section>
+
+<!-- Section Galerie--> 
+    	
+    <section id="gallery" class="gallery py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Ma Galerie</h2>
+        <div id="carouselGallery" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/photo1.jpg" class="d-block w-100" alt="Photo de travail 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Description de la photo de travail 1</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/photo2.jpg" class="d-block w-100" alt="Photo de travail 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Description de la photo de travail 2</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/photo3.jpg" class="d-block w-100" alt="Photo de travail 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Description de la photo de travail 3</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselGallery" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselGallery" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact py-5 bg-white">
+    <div class="container">
+        <h2 class="text-center mb-4">Contactez-moi</h2>
+        <p class="text-center">Si vous avez des questions ou souhaitez discuter d'un projet, contactez-moi !</p>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="name" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 Antoine Esse | Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
